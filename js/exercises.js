@@ -11,21 +11,6 @@
   *          </div>
   */
 const addTweetToTimeline = (user, tweet) => {
-    let tweetDiv = document.createElement("div");
-    tweetDiv.classList.add("tweet");
-    let profileImg = document.createElement("img");
-    profileImg.classList.add("profile-img");
-    profileImg.setAttribute("src", `img/${user}.jpg`)
-    tweetDiv.appendChild(profileImg);
-    let usernameDiv = document.createElement("div");
-    usernameDiv.innerHTML = `@${user}`;
-    usernameDiv.classList.add("username");
-    tweetDiv.appendChild(usernameDiv);
-    let textDiv = document.createElement("div");
-    textDiv.classList.add("txt");
-    textDiv.innerHTML = tweet;
-    tweetDiv.appendChild(textDiv);
-    document.querySelector(".timeline").appendChild(tweetDiv);
 };
 
 
