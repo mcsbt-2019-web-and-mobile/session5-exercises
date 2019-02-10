@@ -60,12 +60,6 @@ const getTimeline = (user) => {
  * "Content-Type": "application/json"
  */
 const createTweet = (usr, twt) => {
-  fetch(
-    "http://localhost:5000/tweet", {
-    method: "POST",
-    body: JSON.stringify({user: usr, tweet: twt}),
-    headers: {"Content-Type": "application/json"}
-    })
 };
 
 /**
