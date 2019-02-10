@@ -39,14 +39,6 @@ const addTweetToTimeline = (user, tweet) => {
  * function
  */
 const getTimeline = (user) => {
-  fetch(`http://localhost:5000/timeline/${user}`)
-    .then(response => response.json())
-    .then(data => {
-      console.log(data)
-      data.forEach(element => {
-        addTweetToTimeline(element.user, element.tweet);
-      });
-    })
 };
 
 
