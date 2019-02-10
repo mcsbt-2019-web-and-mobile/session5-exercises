@@ -75,5 +75,4 @@ const createTweet = (usr, twt) => {
  * the /user/<follower>/follow/<followee> with the POST method
  */
 const follow = (follower, followee) =>  {
-  fetch(`http://localhost:5000/user/${follower}/follow/${followee}`, {method: "POST"})
 };
